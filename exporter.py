@@ -28,7 +28,6 @@ def send_metrics(name,val):
 
 def extract_numbers_from_table():
     # BeautifulSoupを使用してHTMLを解析
-    #response = requests.get("https://tomita.s3.ap-northeast-1.amazonaws.com/packet.html")
     url = "http://localhost:8888/packet.html"
     response = requests.get(url)
     response.raise_for_status()
